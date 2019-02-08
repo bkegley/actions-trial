@@ -24,5 +24,6 @@ console.log({
   token
 });
 
-const payload = fs.readFileSync(eventPath);
+const payloadFile = fs.readFileSync(eventPath);
+const payload = payloadFile.toString("utf8");
 console.log({ payload });
