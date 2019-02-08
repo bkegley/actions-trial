@@ -4,6 +4,6 @@ workflow "Trial Workflow" {
 }
 
 action "log" {
-  uses = ".github/log"
+  uses = "./.github/log"
   secrets = ["DEMO_SECRET"]
 }
