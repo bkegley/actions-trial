@@ -26,5 +26,7 @@ console.log({
 
 const file = require(eventPath);
 
-const before = file.before;
-console.log({ before });
+console.log({ file });
+
+const keys = Object.keys(file);
+console.log({ keys });
