@@ -30,7 +30,9 @@ file.commits.map(commit => console.log({ commit }));
 
 const changedFiles = file.commits.reduce((fileArray, commit) => {
   return fileArray.concat(
-    commit.modified.filter(file => fileArray.indexOf(file) === -1)
+    commit.modified
+      .concat(commit.added)
+      .filter(file => fileArray.indexOf(file) === -1)
   );
 }, []);
 console.log({ changedFiles });
