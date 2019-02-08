@@ -5,7 +5,7 @@ workflow "Trial Workflow" {
 
 workflow "Pull Request Workflow" {
   on = "pull_request"
-  resolve = ["pr"]
+  resolves = ["pr"]
 }
 
 action "log" {
