@@ -25,6 +25,9 @@ console.log({
 });
 
 const file = require(eventPath);
+
+file.commits.map(commit => console.log({ commit }));
+
 const changedFiles = file.commits.reduce((fileArray, commit) => {
   return fileArray.concat(
     commit.modified.filter(file => fileArray.indexOf(file) === -1)
