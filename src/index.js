@@ -1,1 +1,1 @@
-console.log("This is the second commit!");
+console.log("This changed in the commit as well");
