@@ -1,0 +1,8 @@
+{
+  "name": "gh-actions-trial",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/bkegley/actions-trial.git",
+  "author": "Bryan Kegley <hi@bryankegley.me>",
+  "license": "MIT"
+}
