@@ -26,7 +26,8 @@ console.log({
 
 const file = require(eventPath);
 
-console.log({ file });
+const commits = file.commits;
+commits.map(commit => console.log({ commit }));
 
-const keys = Object.keys(file);
-console.log({ keys });
+const modified = file.head_commit.modified;
+console.log({ modified });
