@@ -24,6 +24,7 @@ console.log({
   token
 });
 
-const payloadFile = fs.readFileSync(eventPath);
-const payload = payloadFile.toString("utf8");
-console.log({ payload });
+const file = require(eventPath);
+
+const before = file.before;
+console.log({ before });
